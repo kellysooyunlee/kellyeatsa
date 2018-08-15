@@ -1,5 +1,8 @@
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
 body {
-  background: #52AA8A;
+  background: #bfe5ff;
   font-family: 'JandaManateeSolid', sans-serif;
 }
 
@@ -9,26 +12,32 @@ header {
 
 h1  {
   font-size: 4em;
-  letter-spacing: 5px;
-  color: #F9CB40;
+  letter-spacing: 6px;
+  color: white;
+  text-shadow:
+    -3px -3px 0 #353535,
+    3px -3px 0 #353535,
+    -3px 3px 0 #353535,
+    3px 3px 0 #353535;
+
 }
 
 .search {
   margin: 0 auto;
   max-width: 450px;
- /* position: relative;*/
+  position: relative;
 }
 
 .userInput {
   float: left;
   width: 100%;
-  border: 3px solid #086788;
+  border: 2px solid #353535;
   padding: 5px;
   height: 30px;
   font-family: 'Open Sans';
   font-size: 14px;
-/*  border-radius: 5px;
-  outline: none;*/
+  border-radius: 10px;
+/*  outline: none;*/
   /*color: #9DBFAF;*/
 }
 
@@ -43,10 +52,11 @@ h1  {
   width: 40px;
   height: 30px;
   border: 3px solid #086788;
-  background: #F9CB40;
+  background: #303940;
+  color: white;
   text-align: center;
 /*  color: #ffffff;*/
-/*  border-radius: 5px;*/
+  border-radius: 10px;
   cursor: pointer;
 /*  font-size: 20px;*/
 }
