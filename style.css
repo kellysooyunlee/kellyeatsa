@@ -5,6 +5,7 @@ body {
   background: white;
   font-family: 'JandaManateeSolid', sans-serif;
   vertical-align: center;
+  margin: 0 auto;
 }
 
 header {
@@ -22,6 +23,7 @@ h1  {
     3px 3px 0 #353535;
   margin: 0px;
   margin-top: 100px;
+  margin-bottom: 50px;
 
 }
 
@@ -31,7 +33,7 @@ h1  {
   position: relative;
 }
 
-.userInput {
+input[type="text"] {
   float: left;
   width: 100%;
   border: 2px solid #353535;
@@ -48,12 +50,13 @@ h1  {
   color: #00B4CC;
 }*/
 
-.searchButton {
+input[type="submit"] {
+  float: right;
   position: absolute;  
-  right: -50px;
+/*  right: -50px;*/
   padding: 5px;
-  width: 40px;
-  height: 30px;
+  width: 60px;
+  height: 44px;
   border: 3px solid #086788;
   background: #303940;
   color: white;
@@ -65,10 +68,10 @@ h1  {
 }
 
 /*Resize the wrap to see the search bar change!*/
-.wrap{
+.wrap {
   width: 30%;
   position: absolute;
-  top: 50%;
+/*  top: 50%;*/
   left: 50%;
   transform: translate(-50%, -50%);
 }

@@ -1,29 +1,39 @@
 console.log('Main.js is connected!')
 
 document.addEventListener('DOMContentLoaded', function() {
-  console.log('loaded!');
-  var theForm = document.querySelector('#theform')
-  theForm.addEventListener('submit', function(evt) {
+  var foodSearch = document.querySelector('.search')
+  foodSearch.addEventListener('submit', function(evt) {
     evt.preventDefault();
-    // uncomment this when you're working on it! you don't want to necessarily write "click"
-    // because a user might input with submit by clicking enter. tehrefore this accounts for both
+    // uncomment this when you're working on it!
 
-    var input = evt.target.userinput.value
-    // var email = evt.target.user_email.value
-    // var bio = evt.target.user_bio.value
-    // var number = evt.target.user_favorite_number.value
-    // var pet = evt.target.user_pet.value
+    var input = evt.target.user_userinput.value;
+    var userInput = input.toLowerCase();
+    
+    var plantain = userInput.includes("plantain", "plantains", "trader", "joes", "joe")
+    var bagel = userInput.includes("everything", "bagel", "seasoning")
 
-    // this is going to have an error until you do the part above
-    attachUserInfoToPage(input)
+    if plantain {
+      attachUserInfoToPage(username, email, bio, number, pet)
+    };
+
+    else {
+
+    }
+    
     evt.target.reset()
   })
 
-  function attachUserInfoToPage(input) {
-    console.log(input)
-    var newEntry = document.createElement('li')
-    newEntry.innerHTML = input
-    // newList.appendChild(newEntry)
-    var theList = document.querySelector('#thelist ol')
-    theList.appendChild(newEntry)
+  function attachUserInfoToPage(username, email, bio, number, pet) {
+    console.log(username, email, bio, number, pet)
+    // use JavaScript
+    // Create a new div with the user info 
+    var newDiv = document.createElement('div')
+    var newH1 = document.createElement('h1')
+    newH1.innerHTML = username
+    var newParagraph = document.createElement('p')
+    newParagraph.innerHTML = bio
+    newDiv.appendChild(newH1)
+    newDiv.appendChild(newParagraph)
+    var usersInfo = document.querySelector('#users_info')
+    usersInfo.appendChild(newDiv)
   }
