@@ -1,10 +1,20 @@
 console.log("Main.js is connected!")
 
 var foodProducts = [
-    
 
+    {product: "Trader Joe's Sweet Plantain Chips",
+     company: "Trader Joe's",
+     image: ("./plantain.jpg");
+     stars: '4';
+     calories: '140';
+    },
 
-
+    {product: "Trader Joe's Everything but the Bagel Sesame Seasoning Blend",
+     company: "Trader Joe's",
+     image: ("./bagel.jpg");
+     stars: '4.5';
+     calories: '5';
+    }
 
 ];
 
