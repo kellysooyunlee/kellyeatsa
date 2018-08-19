@@ -1,11 +1,24 @@
-
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+html, body {
+    height: 100%;
+}
+
+html {
+/*    display: table;*/
+    margin: auto;
+}
+
+body {
+/*    display: table-cell;*/
+    vertical-align: middle;
+}
+
 
 body {
   background: white;
   font-family: 'JandaManateeSolid', sans-serif;
-  vertical-align: center;
-  margin: 0 auto;
+/*  margin: 0 auto;*/
 }
 
 header {
@@ -17,13 +30,13 @@ h1  {
   letter-spacing: 6px;
   color: #6BA886;
   text-shadow:
-    -3px -3px 0 #353535,
-    3px -3px 0 #353535,
-    -3px 3px 0 #353535,
-    3px 3px 0 #353535;
+    -3px -3px 0 #303030,
+    3px -3px 0 #303030,
+    -3px 3px 0 #303030,
+    3px 3px 0 #303030;
   margin: 0px;
-  margin-top: 100px;
-  margin-bottom: 50px;
+  margin-top: 140px;
+  margin-bottom: 35px;
 
 }
 
@@ -61,7 +74,8 @@ input[type="submit"] {
   background: #303940;
   color: white;
   text-align: center;
-/*  color: #ffffff;*/
+  font-family: 'Open Sans';
+  font-size: 12px;
   border-radius: 5px;
   cursor: pointer;
 /*  font-size: 20px;*/
