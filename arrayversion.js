@@ -1,5 +1,15 @@
 console.log("Main.js is connected!")
 
+var foodProducts = [
+    
+
+
+
+
+];
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
   console.log("DOM Content is loaded!")
   var foodSearch = document.querySelector('#food_search')
