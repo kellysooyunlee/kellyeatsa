@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var wrap = document.querySelector('.wrap')
     var h1= document.querySelector('h1')
 
-    h1.style.display= "none";
-    wrap.style.display= "none";
+    // h1.style.display= "none";
+    // wrap.style.display= "none";
 
     
     evt.target.reset()

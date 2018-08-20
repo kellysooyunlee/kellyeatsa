@@ -6,7 +6,7 @@ html, body {
 
 html {
 /*    display: table;*/
-    margin: auto;
+    margin: 0 auto;
 }
 
 body {
@@ -18,7 +18,7 @@ body {
 body {
   background: white;
   font-family: 'JandaManateeSolid', sans-serif;
-/*  margin: 0 auto;*/
+  margin: 0 auto;
 }
 
 header {
@@ -41,7 +41,7 @@ h1 {
 
 }
 
-.search {
+#food_search {
   margin: 0 auto;
   max-width: 450px;
   position: relative;

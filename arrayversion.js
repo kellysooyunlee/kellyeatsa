@@ -2,69 +2,56 @@ console.log("Main.js is connected!")
 
 var foodProducts = [
 
-    {product: "Trader Joe's Sweet Plantain Chips",
-     company: "Trader Joe's",
-     image: ("./plantain.jpg");
-     stars: '4';
-     calories: '140';
+    {'product': "Trader Joe's Sweet Plantain Chips",
+     'company': "Trader Joe's",
+     'image': "./plantain.jpg";
+     'stars': '4';
+     'calories': '140';
     },
 
-    {product: "Trader Joe's Everything but the Bagel Sesame Seasoning Blend",
-     company: "Trader Joe's",
-     image: ("./bagel.jpg");
-     stars: '4.5';
-     calories: '5';
+    {'product': "Trader Joe's Everything but the Bagel Sesame Seasoning Blend",
+     'company': "Trader Joe's",
+     'image': "./bagel.jpg";
+     'stars': '4.5';
+     'calories': '5';
     }
 
 ];
 
 
-
-document.addEventListener('DOMContentLoaded', function() {
+$(document).ready(function() {
   console.log("DOM Content is loaded!")
-  var foodSearch = document.querySelector('#food_search')
+  const $searchForm = $('#food_search')
 
-  foodSearch.addEventListener('submit', function(evt) {
-    console.log("Food submit works")
-    evt.preventDefault();
+  $('#food-search').click(function(event) {
+    console.log("User search submit works")
+    event.preventDefault();
 
-    var input = evt.target.user_input.value
-    var userInput = input.toLowerCase()
-    
-    var plantain = userInput.includes("plantain", "plantains", "trader", "joes", "joe");
-    var bagel = userInput.includes("everything", "bagel", "seasoning");
+    const $input = $("#user_submit").val();
+    const $userInput = $input.toLowerCase()
 
-    if (plantain) {
+    if ($userInput~='sweet','plantain','chips') {
       attachPlantainInfo();
     }
 
-    else if (bagel) {
-      attachBagelInfo();
+    else if ($userInput~='sweet','plantain','chips') {
+      attachPlantainInfo();
     }
-
-    var wrap = document.querySelector('.wrap')
-    var h1= document.querySelector('h1')
-
-    h1.style.display= "none";
-    wrap.style.display= "none";
-
     
-    evt.target.reset()
+    event.target.reset()
   })
 
 
   function attachPlantainInfo() {
     console.log("Trader Joe's Sweet Plantain Chips")
 
-    var plantainDiv = document.createElement('div')
-    document.body.appendChild(plantainDiv)
-    var newH1 = document.createElement('h2')
-    newH1.innerHTML = "Sweet Plantain Chips";
-    plantainDiv.appendChild(newH1);
+    const $plantainDiv = $('<div>')
+    $(body).append($plantainDiv)
+    const $foodName = $('<h2>').text("Sweet Plantain Chips").appendTo($plantainDiv)
 
-    var img = document.createElement("img");
-    img.src = ("./plantain.jpg");
-    plantainDiv.appendChild(img);
+    const $img = $("<img>");
+    #img.src = foodProducts[1, 'image'];
+    $plantainDiv.#append(img);
 
     // var newParagraph = document.createElement('p')
     // newParagraph.innerHTML = bio
