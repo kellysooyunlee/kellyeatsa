@@ -88,7 +88,7 @@ $(document).ready(function() {
 
 function createTemplate() {
   console.log("function works!")
-
+  
 }
 
 

@@ -26,14 +26,7 @@ header {
 h1 {
   font-family: 'JandaManateeSolid', sans-serif;
   font-size: 5em;
-/*  letter-spacing: 3px;*/
-/*  letter-spacing: 6px;*/
   color: #3ea56c;
-/*  text-shadow:
-    -3px -3px 0 #303030,
-    3px -3px 0 #303030,
-    -3px 3px 0 #303030,
-    3px 3px 0 #303030;*/
   margin: 0px;
   margin-top: 140px;
   margin-bottom: 35px;
@@ -46,6 +39,10 @@ h1 {
   position: relative;
 }
 
+img.close {
+  max-width: 50px;
+}
+
 input[type="text"] {
   float: left;
   width: 100%;
@@ -56,13 +53,8 @@ input[type="text"] {
   font-size: 14px;
   color: #303030;
   border-radius: 5px;
-/*  outline: none;*/
-  /*color: #9DBFAF;*/
 }
 
-/*.searchTerm:focus{
-  color: #00B4CC;
-}*/
 
 input[type="submit"] {
   float: right;
