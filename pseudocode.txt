@@ -1,0 +1,12 @@
+- Create the homepage of my search website, which will include the company logo as well as the main search input bar.
+- In Javascript file, store array of possible food products as objects and properites of those food products which include image files, average rating, company, etc.
+- User types in desired food product into the engine.
+- User submits that information by either clicking the Submit button or clicking Enter on the keyboard.
+- Prevent the website's default action of refreshing the page when a user submits information.
+- Run a function that loops through the database of stored food products and see if user's information matches any of the name of the food products.
+- If there is a match, add class hidden to the main search page, then make the results div to show.
+- Fill the respective containers with the product's information.
+- User could submit their own review.
+- Loop through reviews and new review to top of the comments.
+- If user's answer does not match any of the databases, print "Object not found and try again".
+- If user wants to search for another food, then exit out the current entry.
