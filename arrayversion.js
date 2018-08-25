@@ -4,16 +4,16 @@ var foodProducts = [
 
     {'product': "Trader Joe's Sweet Plantain Chips",
      'company': "Trader Joe's",
-     'image': "./plantain.jpg";
-     'stars': '4';
-     'calories': '140';
+     'image': "./plantain.jpg",
+     'stars': '4',
+     'calories': '140',
     },
 
     {'product': "Trader Joe's Everything but the Bagel Sesame Seasoning Blend",
      'company': "Trader Joe's",
-     'image': "./bagel.jpg";
-     'stars': '4.5';
-     'calories': '5';
+     'image': "./bagel.jpg",
+     'stars': '4.5',
+     'calories': '5',
     }
 
 ];
@@ -23,20 +23,22 @@ $(document).ready(function() {
   console.log("DOM Content is loaded!")
   const $searchForm = $('#food_search')
 
-  $('#food-search').click(function(event) {
+  $('#food_search').submit(function(event) {
     console.log("User search submit works")
     event.preventDefault();
 
-    const $input = $("#user_submit").val();
+    const $input = $("#user_input").val();
     const $userInput = $input.toLowerCase()
 
-    if ($userInput~='sweet','plantain','chips') {
-      attachPlantainInfo();
-    }
+    console.log($input)
 
-    else if ($userInput~='sweet','plantain','chips') {
-      attachPlantainInfo();
-    }
+    // if ($userInput~='sweet','plantain','chips') {
+    //   attachPlantainInfo();
+    // }
+
+    // else if ($userInput~='sweet','plantain','chips') {
+    //   attachBagelInfo();
+    // }
     
     event.target.reset()
   })
