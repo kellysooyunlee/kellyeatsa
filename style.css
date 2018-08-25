@@ -3,11 +3,11 @@
 html, body {
     height: 100%;
     vertical-align: middle;
-    margin: 0 auto;
 }
 
 .results {
-  margin: 20px;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 
