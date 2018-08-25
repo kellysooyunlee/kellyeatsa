@@ -56,17 +56,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function attachBagelInfo() {
     console.log("Everything Bagel Seasoning")
-    // use JavaScript
-    // Create a new div with the user info 
-    var newDiv = document.createElement('div')
-    var newH1 = document.createElement('h1')
-    newH1.innerHTML = username
-    var newParagraph = document.createElement('p')
-    newParagraph.innerHTML = bio
-    newDiv.appendChild(newH1)
-    newDiv.appendChild(newParagraph)
-    var usersInfo = document.querySelector('#users_info')
-    usersInfo.appendChild(newDiv)
+
+    var bagelDiv = document.createElement('div')
+    document.body.appendChild(bagelDiv)
+    var newH1 = document.createElement('h2')
+    newH1.innerHTML = "Trader Joe's Everything Bagel Seasoning";
+    bagelDiv.appendChild(newH1);
+
+    var img = document.createElement("img");
+    img.src = ("./bagel.jpg");
+    bagelDiv.appendChild(img);
+
+    // var newDiv = document.createElement('div')
+    // var newH1 = document.createElement('h1')
+    // newH1.innerHTML = username
+    // var newParagraph = document.createElement('p')
+    // newParagraph.innerHTML = bio
+    // newDiv.appendChild(newH1)
+    // newDiv.appendChild(newParagraph)
+    // var usersInfo = document.querySelector('#users_info')
+    // usersInfo.appendChild(newDiv)
   }
 
 })

@@ -50,8 +50,8 @@ $(document).ready(function() {
     const $foodName = $('<h2>').text("Sweet Plantain Chips").appendTo($plantainDiv)
 
     const $img = $("<img>");
-    #img.src = foodProducts[1, 'image'];
-    $plantainDiv.#append(img);
+    $img.src = foodProducts[0][image].val()
+    $plantainDiv.append($img);
 
     // var newParagraph = document.createElement('p')
     // newParagraph.innerHTML = bio
