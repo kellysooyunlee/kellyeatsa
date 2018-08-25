@@ -4,7 +4,7 @@ var foodProducts = [
 
     {'product': "trader joe's sweet plantain chips",
      'company': "Trader Joe's",
-     'image': "./plantain.jpg",
+     'image': "./images/plantain.jpg",
      'stars': '4',
      'calories': '140',
      'reviews':
@@ -16,7 +16,7 @@ var foodProducts = [
 
     {'product': "trader joe's everything but the bagel sesame seasoning blend",
      'company': "Trader Joe's",
-     'image': "./bagel.jpg",
+     'image': "./images/bagel.jpg",
      'stars': '4.5',
      'calories': '5',
       'reviews':
@@ -27,6 +27,7 @@ var foodProducts = [
     }
 
 ];
+
 
 
 $(document).ready(function() {
@@ -40,28 +41,23 @@ $(document).ready(function() {
     $(".results").empty();
 
     const $input = $("#user_input").val();
-    const $userInput = $input.toLowerCase()
+    const $userInput = $input.toLowerCase();
 
     console.log($input)
 
-    // console.log(foodProducts[0]["product"])
-
-    // if (foodProducts[0]["product"].includes($userInput)) {
-    //   //any of one word that you include in the serach will match produc string
-    //   console.log("Included")
-    // }
- //we have to loop this because right now
-
 
   for (var i = 0; i < foodProducts.length; i++) {
+    console.log("loop works")
 
+    const $resultsDiv = $(".results");
+    $resultsDiv.removeClass(".hide");
+    
 //how to do function if find any of the words in the userInput.
     if (foodProducts[i]["product"].includes($userInput)) {
       console.log(foodProducts[i]["product"], ". product found")
 
       $(".homepage").hide();
-      $(".results").show();
-
+     
       createTemplate();
       const $img = $("<img>").attr("src",foodProducts[i]["image"]);
       $(".results").append($img);
@@ -84,10 +80,9 @@ $(document).ready(function() {
  //      $(".results").append($errorDiv);
  //    }
 
-
-
 function createTemplate() {
   console.log("function works!")
+  // $('.results').css('display', 'flex');
   
 }
 
