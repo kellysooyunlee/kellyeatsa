@@ -10,3 +10,7 @@
 - Loop through reviews and new review to top of the comments.
 - If user's answer does not match any of the databases, print "Object not found and try again".
 - If user wants to search for another food, then exit out the current entry.
+
+
+When time:
+-Show a cute error message on error page and see why the text is repeating twice.

@@ -78,6 +78,11 @@ $(document).ready(function() {
   })
 
 
+ // else {
+ //      const $errorDiv = $('<div>')
+ //      $errorDiv.text("We could not find your search of " +  $input + " in our database. Please try searching for another product.")
+ //      $(".results").append($errorDiv);
+ //    }
 
 
 

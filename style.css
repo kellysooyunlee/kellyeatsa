@@ -14,7 +14,8 @@ html, body {
 
 body {
   background: white;
-  font-family: 'JandaManateeSolid', sans-serif;
+  font-family: 'Open Sans';
+  font-size: 14px;
   margin: 0 auto;
 }
 
@@ -23,6 +24,7 @@ header {
 }
 
 h1 {
+  font-family: 'JandaManateeSolid', sans-serif;
   font-size: 5em;
 /*  letter-spacing: 3px;*/
 /*  letter-spacing: 6px;*/
