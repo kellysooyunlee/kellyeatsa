@@ -57,9 +57,17 @@ $(document).ready(function() {
       // $(".results.hide").attr("display", "block");
       // $(".results").attr("display", "flex");
       // createTemplate();
+     
+      const $foodTitle = $('<h2>')
+      $foodTitle.text(foodProducts[i]["product"])
+      $(".results-content").prepend($foodTitle);
+
       const $img = $("<img>").attr("src",foodProducts[i]["image"]).attr("id", "picture");
       const $imgDiv = $("<div>").attr("class", "image").append($img)
       $(".results-content").append($imgDiv)
+
+      const $bottomDiv = $("<div>").attr("class", "bottomcontainer")
+      $(".results-content").append($bottomDiv);
       // $(".results-content").append($img);
 
       // const $formDiv = $("<form>").attr("id", "theform")
@@ -70,13 +78,12 @@ $(document).ready(function() {
       // $(".results-content").append($formDiv);
 
       const $formDiv = $("<form>").attr("id", "theform");
-      $(".results-content").append($formDiv);
+      ($bottomDiv).append($formDiv);
 
-      const $foodTitle = $('<h2>')
-      $foodTitle.text(foodProducts[i]["product"])
-      $(".results-content").prepend($foodTitle);
+      const $aside = $("<aside>");
+      ($bottomDiv).append($aside);
+
       // const $reviewList = $("<ul>").appendTo($formDiv)
-
       // const capitalizedProduct = $(foodProducts[i]["product"].css("text-transform", "capitalize"));
 
       const $inputReview = $("<input>").attr({

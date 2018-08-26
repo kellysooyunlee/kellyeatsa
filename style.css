@@ -42,6 +42,19 @@ li {
   margin: 0 auto;
 }
 
+.bottomcontainer {
+  
+}
+
+.reviews {
+  box-sizing: border-box;
+}
+
+aside {
+  box-sizing: border-box;
+}
+
+
 .hidden {
   display: none !important;
 }
@@ -67,7 +80,7 @@ li {
 
 nav {
   display:flex;
-  flex-direction: column;
+  flex-direction: row;
 /*  flex: 2;*/
 
 }
