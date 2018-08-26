@@ -53,6 +53,7 @@ $(document).ready(function() {
       console.log(foodProducts[i]["product"], ". product found")
 
       $(".homepage").hide();
+      $(".results").removeClass("hidden").addClass("show");
       // $(".results.hide").attr("display", "block");
       // $(".results").attr("display", "flex");
       // createTemplate();
@@ -67,7 +68,7 @@ $(document).ready(function() {
       console.log($Reviews);
       $Reviews.text("Reviews");
       $(".results-content").append($formDiv);
-      const $reviewList = $("<ol>").appendTo($formDiv)
+      // const $reviewList = $("<ul>").appendTo($formDiv)
 
       // const capitalizedProduct = $(foodProducts[i]["product"].css("text-transform", "capitalize"));
 
@@ -78,6 +79,8 @@ $(document).ready(function() {
         placeholder: "What are your thoughts about " + foodProducts[i]["product"] + "?"
         // placeholder: "What are your thoughts about " + foodProducts[i]["product"].css("text-transform", "capitalize") +"?"
       });
+
+      const $reviewList = $("<ul>").appendTo($formDiv);
 
       $formDiv.append($inputReview)
 
