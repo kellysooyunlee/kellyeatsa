@@ -22,7 +22,9 @@ li {
   display: none;
 }*/
 
-.results.show {
+/*vertical-align has no effect on a flex item*/
+
+.results {
   padding: 30px;
   border: 2px solid #303030;
   border-radius: 5px;
@@ -33,6 +35,7 @@ li {
   display: flex;
   margin: 0 auto;
   margin-top: 50px;
+  flex-direction: row;
 }
 
 .results-content {
@@ -54,14 +57,18 @@ li {
 
 #closebutton {
   margin: 10px;
-  justify-content: right;
   max-width: 20px;
   max-height: 20px;
+/*  flex: 0 150px;*/
+  display: flex;
+/*  justify-content: center;*/
+  align-items: flex-end;
 }
 
 nav {
   display:flex;
-  flex-direction: row;
+  flex-direction: column;
+/*  flex: 2;*/
 
 }
 
