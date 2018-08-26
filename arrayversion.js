@@ -87,12 +87,13 @@ $(document).ready(function() {
 
       const $inputReview = $("#user_review").val();
 
-      attachReview($inputReview)
+      attachReview($inputReview);
       event.target.reset()
       })
 
-      function attachReview($newReview) {
-        const $newReview = $()
+      function attachReview($inputReview) {
+        const $newReview = $("<li>").text($inputReview);
+        $reviewList.append($newReview)
       }
 
 

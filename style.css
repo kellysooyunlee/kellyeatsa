@@ -11,6 +11,13 @@ html, body {
   display: none;
 }*/
 
+li {
+  background-color: #98e2b9;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
 .results {
   padding: 30px;
   border: 2px solid #303030;
@@ -23,7 +30,6 @@ html, body {
   margin: 0 auto;
   margin-top: 50px;
 }
-
 
 .image {
  /* margin: 10px;*/
