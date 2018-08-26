@@ -63,11 +63,18 @@ $(document).ready(function() {
       // $(".results-content").append($img);
 
       // const $formDiv = $("<form>").attr("id", "theform")
-      const $formDiv = $("<form>").attr("id", "theform").append("<h2>");
-      const $Reviews= $("#theform > h2");
-      console.log($Reviews);
-      $Reviews.text("Reviews");
+      // const $formDiv = $("<form>").attr("id", "theform").append("<h2>");
+      // const $Reviews= $("#theform > h2");
+      // console.log($Reviews);
+      // $Reviews.text("Reviews");
+      // $(".results-content").append($formDiv);
+
+      const $formDiv = $("<form>").attr("id", "theform");
       $(".results-content").append($formDiv);
+
+      const $foodTitle = $('<h2>')
+      $foodTitle.text(foodProducts[i]["product"])
+      $(".results-content").prepend($foodTitle);
       // const $reviewList = $("<ul>").appendTo($formDiv)
 
       // const capitalizedProduct = $(foodProducts[i]["product"].css("text-transform", "capitalize"));
@@ -112,7 +119,8 @@ $(document).ready(function() {
 
     else {
       const $errorDiv = $('<div>')
-      $errorDiv.text("We could not find your search of " +  $input + " in our database. Please try searching for another product.")
+      $errorDiv.text(" ");
+      // $errorDiv.text("We could not find your search of " +  $input + " in our database. Please try searching for another product.")
       $(".results-content").append($errorDiv);
     }
 

@@ -38,6 +38,8 @@ Kelly Lee on ____ rated 4.5 stars and wrote:
 
 
 When time:
+-Make search function include any words, not just being able to enter one word.
+-Link image to the actual trader joe's website
 -Show a cute error message on error page and see why the text is repeating twice.
 -homepage:
 	-"MENU"/Hamburger Menu to show tht tgis i supposed to be more functionable app/  a log in
