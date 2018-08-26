@@ -48,6 +48,15 @@ $(document).ready(function() {
     console.log($input)
 
 
+    // for (var i = 0; i < foodProducts.length; i++) {
+    
+    // const $x = $("#user_input").val();
+    // if ($x === " ") {
+    //     alert("Please enter a review before submitting.");
+    //     return false;
+    // };
+    // }
+
   for (var i = 0; i < foodProducts.length; i++) {
     console.log("loop works")
 
@@ -158,6 +167,16 @@ $(document).ready(function() {
       $(".results-content").append($errorDiv);
     }
 
+    // function emptySearch() {
+    // const $x = $("#user_input").val();
+    // if ($x === " ") {
+    //     alert("Please enter a review before submitting.");
+    //     return false;
+    // };
+    // }
+
+    // emptySearch(); 
+
   }
   // closeButton();
 
@@ -179,9 +198,14 @@ function closeButton() {
 closeButton();
 
 
+
+
+
+// Functions to prevent empty submit are not working VV
+
 function emptySearch() {
     const $x = $("#user_input").val();
-    if ($x == " ") {
+    if ($x === " ") {
         alert("Please enter a review before submitting.");
         return false;
     };
@@ -189,41 +213,14 @@ function emptySearch() {
 
 function emptyReview() {
     const $k = $("#user_review").val();
-    if ($k == " ") {
+    if ($k === " ") {
         alert("Please enter a review before submitting.");
         return false;
     };
+
+
+emptySearch(); 
+emptyReview();
 }
-
-
-
-
-  // function attachPlantainInfo() {
-  //   console.log("Trader Joe's Sweet Plantain Chips")
-
-  //   const $plantainDiv = $('<div>')
-  //   $(body).append($plantainDiv)
-  //   const $foodName = $('<h2>').text("Sweet Plantain Chips").appendTo($plantainDiv)
-
-  //   const $img = $("<img>");
-  //   $img.src = foodProducts[0][image].val()
-  //   $plantainDiv.append($img);
-
-  // }
-
-// function attachBagelInfo() {
-//     console.log("Everything Bagel Seasoning")
-//     // use JavaScript
-//     // Create a new div with the user info 
-//     var newDiv = document.createElement('div')
-//     var newH1 = document.createElement('h1')
-//     newH1.innerHTML = username
-//     var newParagraph = document.createElement('p')
-//     newParagraph.innerHTML = bio
-//     newDiv.appendChild(newH1)
-//     newDiv.appendChild(newParagraph)
-//     var usersInfo = document.querySelector('#users_info')
-//     usersInfo.appendChild(newDiv)
-//   }
 
 })
