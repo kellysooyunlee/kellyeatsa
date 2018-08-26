@@ -5,11 +5,12 @@ var foodProducts = [
     {'product': "trader joe's sweet plantain chips",
      'company': "Trader Joe's",
      'image': "./images/plantain.jpg",
+     'cateory': "Chips and Cookies",
      'stars': '4',
      'calories': '140',
      'reviews':
-      [ {name: "Kelly",
-        text: "This is so delicious!"
+      [ {name: "Octopus",
+        text: "These are so delicious and very addicting.!"
       }
       ]
     },
@@ -17,11 +18,12 @@ var foodProducts = [
     {'product': "trader joe's everything but the bagel sesame seasoning blend",
      'company': "Trader Joe's",
      'image': "./images/bagel.jpg",
-     'stars': '4.5',
+     'category': "Sauces and Seasoning",
+     'stars': '4.8',
      'calories': '5',
       'reviews':
-      [ {name: "Kelly",
-        text: "This is so delicious!"
+      [ {name: "Octopus",
+        text: "As you might suspect from the name, this seasoning tastes exactly like eating an everything bagel. I have sprinkled this on my morning sunny side eggs to give them more flavor, but have no doubt there will be another good combination for this somewhere else."
       }
       ]
     }
@@ -76,9 +78,11 @@ $(document).ready(function() {
       // console.log($Reviews);
       // $Reviews.text("Reviews");
       // $(".results-content").append($formDiv);
-
+      const $reviewsDiv= $("<div>").attr("class", "reviews")
       const $formDiv = $("<form>").attr("id", "theform");
-      ($bottomDiv).append($formDiv);
+
+      ($bottomDiv).append($reviewsDiv);
+      ($reviewsDiv).append($formDiv);
 
       const $aside = $("<aside>");
       ($bottomDiv).append($aside);
