@@ -5,6 +5,10 @@ html, body {
     vertical-align: middle;
 }
 
+@-ms-viewport{
+  width: device-width;
+}
+
 /*---- Results Page Start ----*/
 
 /*.results.hide {
