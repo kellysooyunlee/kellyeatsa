@@ -82,9 +82,10 @@ function createTemplate() {
 const $resultsDiv = $(".results");
 
 function closeButton() {
-    console.log("closebutton")
-    $('#closebutton').click(function(event) {
-    $("body").removeChild($resultsDiv)
+
+    $("#closebutton").click(function(event) {
+      console.log("closebutton works")
+    $("body").hide($resultsDiv)
     })
   }
 
