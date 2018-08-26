@@ -2,10 +2,17 @@
 - In Javascript file, store array of possible food products as objects and properites of those food products which include image files, average rating, company, etc.
 - User types in desired food product into the engine.
 - User submits that information by either clicking the Submit button or clicking Enter on the keyboard.
+- Prevent user from submitting without entering text or empty strings.
 - Prevent the website's default action of refreshing the page when a user submits information.
 - Run a function that loops through the database of stored food products and see if user's information matches any of the name of the food products. (Find a way to do this so user can put in multiple words)
 - If there is a match, add class hidden to the main search page, then make the results div to show.
-- Fill the respective containers with the product's information.
+- If there isn't a match, alert the user that there is no such product in the data base, and that the user should try again.
+- Fill the respective containers with the product's information:
+	-The header in which the close button will go on the top right
+	-The name of the food product
+	-The image of the food product
+	-The form of reviews and inputtable text.
+	-The description of the product.
 - User could submit their own review.
 - Loop through reviews and new review to top of the comments.
 - If user's answer does not match any of the databases, print "Object not found and try again".
