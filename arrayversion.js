@@ -50,8 +50,6 @@ $(document).ready(function() {
 
     // const $resultsDiv = $(".results");
     // $resultsDiv.removeClass(".hide");
-    
-//how to do function if find any of the words in the userInput.
     if (foodProducts[i]["product"].includes($userInput)) {
       console.log(foodProducts[i]["product"], ". product found")
 
@@ -71,57 +69,58 @@ $(document).ready(function() {
     }
 
   }
+  // closeButton();
+
     event.target.reset()
   })
-
-
- // else {
- //      const $errorDiv = $('<div>')
- //      $errorDiv.text("We could not find your search of " +  $input + " in our database. Please try searching for another product.")
- //      $(".results").append($errorDiv);
- //    }
 
 function createTemplate() {
   console.log("function works!")
   // $('.results').css('display', 'flex');
-  
 }
 
+const $resultsDiv = $(".results");
 
-
-
-  function attachPlantainInfo() {
-    console.log("Trader Joe's Sweet Plantain Chips")
-
-    const $plantainDiv = $('<div>')
-    $(body).append($plantainDiv)
-    const $foodName = $('<h2>').text("Sweet Plantain Chips").appendTo($plantainDiv)
-
-    const $img = $("<img>");
-    $img.src = foodProducts[0][image].val()
-    $plantainDiv.append($img);
-
-    // var newParagraph = document.createElement('p')
-    // newParagraph.innerHTML = bio
-    // newDiv.appendChild(newH1)
-    // newDiv.appendChild(newParagraph)
-    // var usersInfo = document.querySelector('#users_info')
-    // usersInfo.appendChild(newDiv)
+function closeButton() {
+    console.log("closebutton")
+    $('#closebutton').click(function(event) {
+    $("body").removeChild($resultsDiv)
+    })
   }
 
-function attachBagelInfo() {
-    console.log("Everything Bagel Seasoning")
-    // use JavaScript
-    // Create a new div with the user info 
-    var newDiv = document.createElement('div')
-    var newH1 = document.createElement('h1')
-    newH1.innerHTML = username
-    var newParagraph = document.createElement('p')
-    newParagraph.innerHTML = bio
-    newDiv.appendChild(newH1)
-    newDiv.appendChild(newParagraph)
-    var usersInfo = document.querySelector('#users_info')
-    usersInfo.appendChild(newDiv)
-  }
+closeButton();
+
+
+
+
+
+
+  // function attachPlantainInfo() {
+  //   console.log("Trader Joe's Sweet Plantain Chips")
+
+  //   const $plantainDiv = $('<div>')
+  //   $(body).append($plantainDiv)
+  //   const $foodName = $('<h2>').text("Sweet Plantain Chips").appendTo($plantainDiv)
+
+  //   const $img = $("<img>");
+  //   $img.src = foodProducts[0][image].val()
+  //   $plantainDiv.append($img);
+
+  // }
+
+// function attachBagelInfo() {
+//     console.log("Everything Bagel Seasoning")
+//     // use JavaScript
+//     // Create a new div with the user info 
+//     var newDiv = document.createElement('div')
+//     var newH1 = document.createElement('h1')
+//     newH1.innerHTML = username
+//     var newParagraph = document.createElement('p')
+//     newParagraph.innerHTML = bio
+//     newDiv.appendChild(newH1)
+//     newDiv.appendChild(newParagraph)
+//     var usersInfo = document.querySelector('#users_info')
+//     usersInfo.appendChild(newDiv)
+//   }
 
 })

@@ -3,7 +3,7 @@
 - User types in desired food product into the engine.
 - User submits that information by either clicking the Submit button or clicking Enter on the keyboard.
 - Prevent the website's default action of refreshing the page when a user submits information.
-- Run a function that loops through the database of stored food products and see if user's information matches any of the name of the food products.
+- Run a function that loops through the database of stored food products and see if user's information matches any of the name of the food products. (Find a way to do this so user can put in multiple words)
 - If there is a match, add class hidden to the main search page, then make the results div to show.
 - Fill the respective containers with the product's information.
 - User could submit their own review.
