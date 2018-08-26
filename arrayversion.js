@@ -85,7 +85,8 @@ function closeButton() {
 
     $("#closebutton").click(function(event) {
       console.log("closebutton works")
-    $("body").hide($resultsDiv)
+    // $("body").hide($resultsDiv)
+      window.location.reload(true);
     })
   }
 
