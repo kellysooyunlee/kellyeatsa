@@ -14,6 +14,8 @@
 	-The form of reviews and inputtable text.
 	-The description of the product.
 - User could submit their own review.
+	-maybe have input for name, review, then submit button (with name bolded)
+	-if time have user photo in there
 - Loop through reviews and new review to top of the comments.
 - If user's answer does not match any of the databases, print "Object not found and try again".
 - If user wants to search for another food, then exit out the current entry.
@@ -26,7 +28,8 @@ Qs:
 -Why isn't my h2 printing?
 
 
-
+Kelly Lee on ____ rated 4.5 stars and wrote:
+"I love these so much!" and have name bolded
 
 
 

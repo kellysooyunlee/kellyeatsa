@@ -82,7 +82,7 @@ $(document).ready(function() {
 
       const $reviewList = $("<ul>").appendTo($formDiv);
 
-      $formDiv.append($inputReview)
+      $formDiv.prepend($inputReview)
 
       $('#theform').submit(function(event) {
       console.log("Review submit works")
@@ -98,11 +98,15 @@ $(document).ready(function() {
         const $newReview = $("<li>").text($inputReview);
         // $reviewList.append($newReview)
         const $allReviews = $("#theform li")
-        console.log($allReviews);
-          for (var i = 0; i < $allReviews.length; i++) {
-          
-          $newReview.insertBefore($allReviews[0])
-        }
+        // console.log($allReviews);
+        //   for (var i = 0; i < $allReviews.length; i++) {
+        
+        $reviewList.prepend($newReview)
+        //   $newReview.insertBefore($allReviews[0])
+        // console.log($allReviews);
+        // for (var i = 0; i < $allReviews.length; i++) {
+        // $reviewList.prepend($allReviews[0])
+        // }
       }
     }
 

@@ -14,7 +14,7 @@ html, body {
 li {
   background-color: #98e2b9;
   border-radius: 5px;
-  padding: 10px;
+  padding: 30px;
   margin: 10px;
 }
 
@@ -86,6 +86,10 @@ h1 {
   margin-top: 140px;
   margin-bottom: 35px;
 
+}
+
+#user_review {
+  margin-bottom: 20px;
 }
 
 #food_search {
