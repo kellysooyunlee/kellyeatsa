@@ -9,8 +9,9 @@ var foodProducts = [
      'stars': '4',
      'calories': '140',
      'reviews':
-      [ {name: "Octopus",
-        text: "These are so delicious and very addicting.!"
+      [ {name: "Ezra Curry",
+        text: "These are so delicious and very addicting.!",
+        date: "August, 20, 2018",
       }
       ]
     },
@@ -22,8 +23,9 @@ var foodProducts = [
      'stars': '4.8',
      'calories': '5',
       'reviews':
-      [ {name: "Octopus",
-        text: "As you might suspect from the name, this seasoning tastes exactly like eating an everything bagel. I have sprinkled this on my morning sunny side eggs to give them more flavor, but have no doubt there will be another good combination for this somewhere else."
+      [ {name: "Octopus Kim",
+        text: "As you might suspect from the name, this seasoning tastes exactly like eating an everything bagel. I have sprinkled this on my morning sunny side eggs to give them more flavor, but have no doubt there will be another good combination for this somewhere else.",
+        date: "August, 18, 2018",
       }
       ]
     }
@@ -94,7 +96,7 @@ $(document).ready(function() {
       // const $calories = $("<li>").text("Calories per serving: " + foodProducts[i]["calories"]);
 
       const $asideText = $("<ul>").appendTo($aside);
-      const $name = $("<li>").text(foodProducts[i]["product"]).css("font-weight", "600").appendTo($asideText);
+      const $name = $("<li class='name'>").text(foodProducts[i]["product"]).css("font-weight", "600").appendTo($asideText);
       const $company = $("<li>").text(foodProducts[i]["company"]).appendTo($asideText);
       const $category = $("<li>").text(foodProducts[i]["category"]).appendTo($asideText);
       const $rating = $("<li>").text("Average rating: " + foodProducts[i]["stars"]).appendTo($asideText);
@@ -114,8 +116,11 @@ $(document).ready(function() {
       });
 
       const $reviewList = $("<ul>").appendTo($formDiv);
-
+      const $firstReview= $("<li>").text(foodProducts[i]["reviews".name]);
       $formDiv.prepend($inputReview)
+      $reviewList.prepend($firstReview)
+
+
 
       $('#theform').submit(function(event) {
         console.log("Review submit works")
@@ -141,6 +146,9 @@ $(document).ready(function() {
         // $reviewList.prepend($allReviews[0])
         // }
       }
+
+
+
     }
 
     else {

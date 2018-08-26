@@ -10,25 +10,7 @@ html, body {
 /*.results.hide {
   display: none;
 }*/
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
 
-#theform li {
-  background-color: #98e2b9;
-  border-radius: 5px;
-  padding: 30px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-/*.hidden {
-  display: none;
-}*/
-
-/*vertical-align has no effect on a flex item*/
 
 .results {
   padding: 30px;
@@ -51,44 +33,10 @@ ul {
   box-sizing: border-box;
 }
 
-.bottomcontainer {
-  display: flex;
- width: 550px;
-/*  width: 100%;*/
-/*  flex-direction: row;
-  justify-content: space-between;*/
-}
-/*  width: 700px;
-}*/
-
-.reviews {
-  box-sizing: border-box;
-  flex: 2;
-}
-
-aside {
-  box-sizing: border-box;
-  flex: 1;
-  /*background-color: #C2F9FA;*/
-  border: 2px solid #7F7F7F;
-  border-radius: 5px;
-  margin-left: 50px;
-/*  min-height: 50vh;*/
-}
-
-
 .hidden {
   display: none !important;
 }
 
-
-.image {
- /* margin: 10px;*/
-/*  max-width: 300px;*/
-  margin: 0 auto;
-  text-align: center;
-  padding: 30px;
-}
 
 #closebutton {
 /*  margin: 10px;*/
@@ -115,6 +63,93 @@ nav img {
   max-width: 20px;
   max-height: 20px;
 }
+
+.bottomcontainer {
+  display: flex;
+ width: 550px;
+/*  width: 100%;*/
+/*  flex-direction: row;
+  justify-content: space-between;*/
+}
+/*  width: 700px;
+}*/
+
+
+/* Initial Food Product Info Start */
+
+.image {
+ /* margin: 10px;*/
+/*  max-width: 300px;*/
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+}
+
+/* Initial Food Product Info End */
+
+
+/* - - The Aside Description Start - - */
+
+aside {
+  box-sizing: border-box;
+  flex: 1;
+  /*background-color: #C2F9FA;*/
+  border: 2px solid #7F7F7F;
+  border-radius: 5px;
+  margin-left: 50px;
+/*  min-height: 50vh;*/
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+aside li {
+  margin: 5px;
+}
+
+.name {
+  font-family: 'helvetica', sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+
+/* - - The Aside Description End - - */
+
+/* - - REVIEWS Section Start - - */
+
+.reviews {
+  box-sizing: border-box;
+  flex: 2;
+}
+
+#theform li {
+  background-color: #98e2b9;
+  border-radius: 5px;
+  padding: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.leftcomment {
+float: left;
+}
+
+.rightcomment {
+float: right;
+}
+
+/*.hidden {
+  display: none;
+}*/
+
+/*vertical-align has no effect on a flex item*/
+
+
 /*
 ---- Results Page End ----*/
 
