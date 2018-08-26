@@ -164,10 +164,6 @@ $(document).ready(function() {
   event.target.reset()
   })
 
-function createTemplate() {
-  console.log("function works!")
-  // $('.results').css('display', 'flex');
-}
 
 const $resultsDiv = $(".results");
 
@@ -183,6 +179,21 @@ function closeButton() {
 closeButton();
 
 
+function emptySearch() {
+    const $x = $("#user_input").val();
+    if ($x == " ") {
+        alert("Please enter a review before submitting.");
+        return false;
+    };
+}
+
+function emptyReview() {
+    const $k = $("#user_review").val();
+    if ($k == " ") {
+        alert("Please enter a review before submitting.");
+        return false;
+    };
+}
 
 
 
