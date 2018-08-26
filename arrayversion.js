@@ -67,13 +67,14 @@ $(document).ready(function() {
       console.log($Reviews);
       $Reviews.text("Reviews");
       $(".results-content").append($formDiv);
+      const $reviewList = $("<ol>").appendTo($formDiv)
 
       // const capitalizedProduct = $(foodProducts[i]["product"].css("text-transform", "capitalize"));
 
       const $inputReview = $("<input>").attr({
         type: "text", 
-        id: "userinput",
-        name: "userinput",
+        id: "user_review",
+        name: "user_review",
         placeholder: "What are your thoughts about " + foodProducts[i]["product"] + "?"
         // placeholder: "What are your thoughts about " + foodProducts[i]["product"].css("text-transform", "capitalize") +"?"
       });
@@ -83,8 +84,17 @@ $(document).ready(function() {
       $('#theform').submit(function(event) {
       console.log("Review submit works")
       event.preventDefault();
+
+      const $inputReview = $("#user_review").val();
+
+      attachReview($inputReview)
       event.target.reset()
       })
+
+      function attachReview($newReview) {
+        const $newReview = $()
+      }
+
 
       // const $reviewList
     }
