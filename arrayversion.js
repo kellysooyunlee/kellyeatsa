@@ -5,7 +5,7 @@ var foodProducts = [
     {'product': "trader joe's sweet plantain chips",
      'company': "Trader Joe's",
      'image': "./images/plantain.jpg",
-     'cateory': "Chips and Cookies",
+     'category': "Chips and Cookies",
      'stars': '4',
      'calories': '140',
      'reviews':
@@ -85,6 +85,21 @@ $(document).ready(function() {
       ($reviewsDiv).append($formDiv);
 
       const $aside = $("<aside>");
+
+      // const $asideText = $("<ul>").appendTo($aside);
+      // const $name = $("<li>").text(foodProducts[i]["product"]);
+      // const $company = $("<li>").text(foodProducts[i]["company"]);
+      // const $category = $("<li>").text(foodProducts[i]["category"]);
+      // const $rating = $("<li>").text("Average rating: " + foodProducts[i]["stars"]);
+      // const $calories = $("<li>").text("Calories per serving: " + foodProducts[i]["calories"]);
+
+      const $asideText = $("<ul>").appendTo($aside);
+      const $name = $("<li>").text(foodProducts[i]["product"]).css("font-weight", "600").appendTo($asideText);
+      const $company = $("<li>").text(foodProducts[i]["company"]).appendTo($asideText);
+      const $category = $("<li>").text(foodProducts[i]["category"]).appendTo($asideText);
+      const $rating = $("<li>").text("Average rating: " + foodProducts[i]["stars"]).appendTo($asideText);
+      const $calories = $("<li>").text("Calories per serving: " + foodProducts[i]["calories"]).appendTo($asideText);
+      
       ($bottomDiv).append($aside);
 
       // const $reviewList = $("<ul>").appendTo($formDiv)
@@ -103,13 +118,13 @@ $(document).ready(function() {
       $formDiv.prepend($inputReview)
 
       $('#theform').submit(function(event) {
-      console.log("Review submit works")
-      event.preventDefault();
+        console.log("Review submit works")
+        event.preventDefault();
 
-      const $inputReview = $("#user_review").val();
+        const $inputReview = $("#user_review").val();
 
-      attachReview($inputReview);
-      event.target.reset()
+        attachReview($inputReview);
+        event.target.reset()
       })
 
       function attachReview($inputReview) {
