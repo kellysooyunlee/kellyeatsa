@@ -96,11 +96,14 @@ $(document).ready(function() {
 
       function attachReview($inputReview) {
         const $newReview = $("<li>").text($inputReview);
-        $reviewList.append($newReview)
+        // $reviewList.append($newReview)
+        const $allReviews = $("#theform li")
+        console.log($allReviews);
+          for (var i = 0; i < $allReviews.length; i++) {
+          
+          $newReview.insertBefore($allReviews[0])
+        }
       }
-
-
-      // const $reviewList
     }
 
     else {
