@@ -7,9 +7,9 @@ html, body {
 
 /*---- Results Page Start ----*/
 
-.results.hide {
+/*.results.hide {
   display: none;
-}
+}*/
 
 .results {
   border: 2px solid #303030;

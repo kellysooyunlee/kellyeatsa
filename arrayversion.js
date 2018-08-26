@@ -37,8 +37,7 @@ $(document).ready(function() {
   $('#food_search').submit(function(event) {
     console.log("User search submit works")
     event.preventDefault();
-
-    $(".results").empty();
+    $(".results-content").empty();
 
     const $input = $("#user_input").val();
     const $userInput = $input.toLowerCase();
@@ -49,14 +48,16 @@ $(document).ready(function() {
   for (var i = 0; i < foodProducts.length; i++) {
     console.log("loop works")
 
-    const $resultsDiv = $(".results");
-    $resultsDiv.removeClass(".hide");
+    // const $resultsDiv = $(".results");
+    // $resultsDiv.removeClass(".hide");
     
 //how to do function if find any of the words in the userInput.
     if (foodProducts[i]["product"].includes($userInput)) {
       console.log(foodProducts[i]["product"], ". product found")
 
       $(".homepage").hide();
+      // $(".results.hide").attr("display", "block");
+      // $(".results").attr("display", "flex");
      
       createTemplate();
       const $img = $("<img>").attr("src",foodProducts[i]["image"]);
