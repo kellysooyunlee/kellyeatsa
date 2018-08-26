@@ -60,8 +60,11 @@ $(document).ready(function() {
 
       const $img = $("<img>").attr("src",foodProducts[i]["image"]).attr("id", "picture");
       const $imgDiv = $("<div>").attr("class", "image").append($img)
-      $(".results-content").append($imgDiv);
+      $(".results-content").append($imgDiv)
       // $(".results-content").append($img);
+
+      const $formDiv = $("<form>").attr("id", "theform").append("<fieldset>");
+      $(".results-content").append($formDiv)
 
     }
 
