@@ -19,13 +19,17 @@
 - Loop through reviews and new review to top of the comments.
 - If user's answer does not match any of the databases, print "Object not found and try again".
 - If user wants to search for another food, then exit out the current entry.
-
+ 
+-maybe do shadow or larger text area to make review more different. i remmeber we had a fieldset before in class
 
 
 Qs:
 -How do i make review to go on top of comments?
 -Is there a way to append divs to ensure it will be the very last div in that page?)
 -Why isn't my h2 printing?
+-how do i make reviews permannently go when i refresh the page?
+-how to edit your review/delete
+
 
 
 Kelly Lee on ____ rated 4.5 stars and wrote:
