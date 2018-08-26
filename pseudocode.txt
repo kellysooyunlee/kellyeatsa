@@ -19,5 +19,14 @@
 - If user wants to search for another food, then exit out the current entry.
 
 
+
+Qs:
+-Is there a way to append divs to ensure it will be the very last div in that page?)
+- 
+
+
+
+
+
 When time:
 -Show a cute error message on error page and see why the text is repeating twice.

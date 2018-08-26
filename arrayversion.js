@@ -56,16 +56,19 @@ $(document).ready(function() {
       $(".homepage").hide();
       // $(".results.hide").attr("display", "block");
       // $(".results").attr("display", "flex");
-     
       createTemplate();
-      const $img = $("<img>").attr("src",foodProducts[i]["image"]);
-      $(".results").append($img);
+
+      const $img = $("<img>").attr("src",foodProducts[i]["image"]).attr("id", "picture");
+      const $imgDiv = $("<div>").attr("class", "image").append($img)
+      $(".results-content").append($imgDiv);
+      // $(".results-content").append($img);
+
     }
 
     else {
       const $errorDiv = $('<div>')
       $errorDiv.text("We could not find your search of " +  $input + " in our database. Please try searching for another product.")
-      $(".results").append($errorDiv);
+      $(".results-content").append($errorDiv);
     }
 
   }
