@@ -29,7 +29,6 @@ var foodProducts = [
 ];
 
 
-
 $(document).ready(function() {
   console.log("DOM Content is loaded!")
   const $searchForm = $('#food_search')
@@ -56,16 +55,38 @@ $(document).ready(function() {
       $(".homepage").hide();
       // $(".results.hide").attr("display", "block");
       // $(".results").attr("display", "flex");
-      createTemplate();
-
+      // createTemplate();
       const $img = $("<img>").attr("src",foodProducts[i]["image"]).attr("id", "picture");
       const $imgDiv = $("<div>").attr("class", "image").append($img)
       $(".results-content").append($imgDiv)
       // $(".results-content").append($img);
 
-      const $formDiv = $("<form>").attr("id", "theform").append("<fieldset>");
-      $(".results-content").append($formDiv)
+      // const $formDiv = $("<form>").attr("id", "theform")
+      const $formDiv = $("<form>").attr("id", "theform").append("<h2>");
+      const $Reviews= $("#theform > h2");
+      console.log($Reviews);
+      $Reviews.text("Reviews");
+      $(".results-content").append($formDiv);
 
+      // const capitalizedProduct = $(foodProducts[i]["product"].css("text-transform", "capitalize"));
+
+      const $inputReview = $("<input>").attr({
+        type: "text", 
+        id: "userinput",
+        name: "userinput",
+        placeholder: "What are your thoughts about " + foodProducts[i]["product"] + "?"
+        // placeholder: "What are your thoughts about " + foodProducts[i]["product"].css("text-transform", "capitalize") +"?"
+      });
+
+      $formDiv.append($inputReview)
+
+      $('#theform').submit(function(event) {
+      console.log("Review submit works")
+      event.preventDefault();
+      event.target.reset()
+      })
+
+      // const $reviewList
     }
 
     else {
@@ -77,7 +98,7 @@ $(document).ready(function() {
   }
   // closeButton();
 
-    event.target.reset()
+  event.target.reset()
   })
 
 function createTemplate() {
