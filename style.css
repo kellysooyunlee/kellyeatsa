@@ -10,12 +10,18 @@ html, body {
 /*.results.hide {
   display: none;
 }*/
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 li {
   background-color: #98e2b9;
   border-radius: 5px;
   padding: 30px;
-  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /*.hidden {
@@ -47,9 +53,12 @@ li {
 
 .bottomcontainer {
   display: flex;
-  flex-direction: row;
   width: 100%;
+/*  flex-direction: row;
+  justify-content: space-between;*/
 }
+/*  width: 700px;
+}*/
 
 .reviews {
   box-sizing: border-box;
@@ -59,8 +68,10 @@ li {
 aside {
   box-sizing: border-box;
   flex: 1;
-  background-color: #C2F9FA;
+  /*background-color: #C2F9FA;*/
+  border: 2px solid #7F7F7F;
   border-radius: 5px;
+  margin-left: 30px;
 /*  min-height: 50vh;*/
 }
 
@@ -79,7 +90,7 @@ aside {
 }
 
 #closebutton {
-  margin: 10px;
+/*  margin: 10px;*/
   max-width: 20px;
   max-height: 20px;
 /*  flex: 0 150px;*/
@@ -137,6 +148,7 @@ h2 {
 
 #user_review {
   margin-bottom: 20px;
+  border: 1px solid #303030;
 }
 
 #food_search {
