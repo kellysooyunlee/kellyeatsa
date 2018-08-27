@@ -195,6 +195,18 @@ function closeButton() {
     })
   }
 
+// function backButton() {
+
+//     $("#backbutton").click(function(event) {
+//       console.log("closebutton works")
+//     // $("body").hide($resultsDiv)
+//       window.location.reload(true);
+//     })
+//   }
+
+
+
+// backButton();
 closeButton();
 
 
