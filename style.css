@@ -264,7 +264,7 @@ input[type="submit"] {
 /* Styles */
 
 .results {
-  padding: 20px 20px 200px 20px;
+  padding: 20px 40px 200px 20px;
   border: 4px solid #303030;
   border-radius: 15px;
   max-width: 100%;
@@ -315,14 +315,14 @@ input[type="submit"] {
 }
 
 h2 {
-
+  margin-left: 10px;
 }
 
 .image img {
   max-height: 300px;
   margin: 0 auto;
   text-align: center;
-  padding: 30px 30px 0 30px;
+  padding: 10px 40px 0 20px;
   box-sizing: border-box;
 }
 
@@ -334,10 +334,19 @@ h2 {
 }
 
   aside {
-/*    flex: 0 150px;*/
+  flex: 0;
   display: flex;
   margin: 0;
+  margin-bottom: 30px;
     }
+
+  #user_review {
+  margin: 30px;
+  border: 1px solid #303030;
+  margin: 0 auto;
+  }
+
+
 }
 }
 
