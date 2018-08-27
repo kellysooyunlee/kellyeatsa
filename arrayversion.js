@@ -108,7 +108,7 @@ $(document).ready(function() {
       const $name = $("<li class='name'>").text(foodProducts[i]["product"]).css("font-weight", "600").appendTo($asideText);
       const $company = $("<li>").text(foodProducts[i]["company"]).appendTo($asideText);
       const $category = $("<li>").text(foodProducts[i]["category"]).appendTo($asideText);
-      const $rating = $("<li>").text("Average rating: " + foodProducts[i]["stars"]).appendTo($asideText);
+      const $rating = $("<li>").text("Average rating: " + foodProducts[i]["stars"] + "★").appendTo($asideText);
       const $calories = $("<li>").text("Calories per serving: " + foodProducts[i]["calories"]).appendTo($asideText);
       
       ($bottomDiv).append($aside);
