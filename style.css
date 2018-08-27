@@ -271,6 +271,7 @@ input[type="submit"] {
   display: 100vh;
   margin: 0;
   box-sizing: border-box;
+  background-color: white;
 }
 
 .results-content {
@@ -287,8 +288,12 @@ input[type="submit"] {
   transform: translate(-50%, -50%);
 }
 
-h1 {
+body {
+  background-color: #3ea56c;
+}
 
+h1 {
+  color: white;
   margin-bottom: 70px;
 
 }
