@@ -125,9 +125,9 @@ $(document).ready(function() {
       });
 
       const $reviewList = $("<ul>").appendTo($formDiv);
-      const $firstReview= $("<li>").text(foodProducts[i]["reviews".name]);
-      $formDiv.prepend($inputReview)
-      $reviewList.prepend($firstReview)
+      const $firstReview= $("<li>").text(foodProducts[i]["reviews"]);
+      $formDiv.prepend($inputReview);
+      $reviewList.prepend($firstReview);
 
 
 
