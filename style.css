@@ -1,0 +1,364 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+html, body {
+    height: 100%;
+    vertical-align: middle;
+}
+
+@-ms-viewport{
+  width: device-width;
+}
+
+/*---- Results Page Start ----*/
+
+/*.results.hide {
+  display: none;
+}*/
+
+
+.results {
+  padding: 30px;
+  border: 2px solid #303030;
+  border-radius: 5px;
+  max-width: 700px;
+/*  max-width: 800px;*/
+/*  vertical-align: middle;
+  text-align: center;*/
+  display: flex;
+  margin: 0 auto;
+  margin-top: 50px;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.results-content {
+  margin: 0 auto;
+  max-width: 700px;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none !important;
+}
+
+
+#closebutton {
+  max-width: 20px;
+  max-height: 20px;
+  display: flex;
+  align-items: flex-end;
+}
+/*
+#backbutton {
+  height: 20px;
+  width: 100%;
+  align-items: flex-end;
+}
+*/
+
+nav {
+  display:flex;
+  flex-direction: row;
+  box-sizing: border-box;
+/*  flex: 2;*/
+
+}
+
+/*nav img {
+  box-sizing: border-box;
+  justify-content: flex-end;
+  max-width: 20px;
+  max-height: 20px;
+}*/
+
+/*this one is for the backbutton
+*/
+nav img {
+  box-sizing: border-box;
+  justify-content: flex-end;
+  max-width: 40px;
+  max-height: 40px;
+}
+
+
+
+.bottomcontainer {
+  display: flex;
+ width: 550px;
+/*  width: 100%;*/
+/*  flex-direction: row;
+  justify-content: space-between;*/
+}
+/*  width: 700px;
+}*/
+
+
+/* Initial Food Product Info Start */
+
+.image {
+ /* margin: 10px;*/
+/*  max-width: 300px;*/
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+}
+
+/* Initial Food Product Info End */
+
+
+/* - - The Aside Description Start - - */
+
+aside {
+  box-sizing: border-box;
+  flex: 1;
+  /*background-color: #C2F9FA;*/
+  border: 2px solid #7F7F7F;
+  border-radius: 5px;
+  margin-left: 50px;
+/*  min-height: 50vh;*/
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+aside li {
+  margin: 5px;
+}
+
+.name {
+  font-family: 'helvetica', sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+
+/* - - The Aside Description End - - */
+
+/* - - REVIEWS Section Start - - */
+
+.reviews {
+  box-sizing: border-box;
+  flex: 2;
+}
+
+#theform li {
+  background-color: #98e2b9;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.leftcomment {
+float: left;
+}
+
+.rightcomment {
+float: right;
+}
+
+/*.hidden {
+  display: none;
+}*/
+
+/*vertical-align has no effect on a flex item*/
+
+
+/*
+---- Results Page End ----*/
+
+body {
+  background: white;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  font-family: 'JandaManateeSolid', sans-serif;
+  font-size: 5em;
+  color: #3ea56c;
+  margin: 0px;
+  margin-top: 140px;
+  margin-bottom: 35px;
+
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 0 auto;
+}
+
+#user_review {
+  margin-bottom: 20px;
+  border: 1px solid #303030;
+}
+
+#food_search {
+  margin: 0 auto;
+  max-width: 450px;
+  position: relative;
+}
+
+/*img.close {
+  max-width: 50px;
+}*/
+
+input[type="text"] {
+  float: left;
+  width: 100%;
+  border: 2px solid #303030;
+  padding: 5px;
+  height: 30px;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  color: #303030;
+  border-radius: 5px;
+}
+
+
+input[type="submit"] {
+  float: right;
+  position: absolute;  
+/*  right: -50px;*/
+  padding: 5px;
+  width: 60px;
+  height: 44px;
+  border: 3px solid #086788;
+  background: #303940;
+  color: white;
+  text-align: center;
+  font-family: 'Open Sans';
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+/*  font-size: 20px;*/
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap {
+  width: 30%;
+  position: absolute;
+/*  top: 50%;*/
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-bottom: 50px;
+}
+
+/*<------- Media Queries Time --------->*/
+
+/* Mobile (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+
+.results {
+  padding: 20px 40px 200px 20px;
+  border: 4px solid #303030;
+  border-radius: 15px;
+  max-width: 100%;
+  display: 100vh;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.results-content {
+/*  margin: 0 auto;*/
+  padding-right: 20px;
+ /* margin-right: 100px;*/
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.wrap {
+  width: 80%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+body {
+  background-color: #3ea56c;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 70px;
+
+}
+
+input[type="text"] {
+  
+  float: none;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  display: none;
+
+}
+
+/*---Results Page Media Query----*/
+
+#closebutton {
+  max-width: 30px;
+  max-height: 30px;
+  display: flex;
+  align-items: flex-end;
+}
+
+h2 {
+  margin-left: 10px;
+}
+
+.image img {
+  max-height: 300px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 40px 0 20px;
+  box-sizing: border-box;
+}
+
+.bottomcontainer {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0 ;
+  width: 100%;
+}
+
+  aside {
+  flex: 0;
+  display: flex;
+  margin: 0;
+  margin-bottom: 30px;
+    }
+
+  #user_review {
+  margin: 30px;
+  border: 1px solid #303030;
+  margin: 0 auto;
+  }
+
+
+}
+}
+
+
+
+
+
+}
+
+
