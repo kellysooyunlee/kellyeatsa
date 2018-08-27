@@ -16,6 +16,20 @@ var foodProducts = [
       ]
     },
 
+    {'product': "pocky matcha green tea cream covered biscuit sticks",
+     'company': "Glico",
+     'image': "./images/pocky.jpeg",
+     'category': "Chips and Cookies",
+     'stars': '4.8',
+     'calories': '110',
+     'reviews':
+      [ {name: "Jae Park",
+        text: "So good. Pocky is so good.",
+        date: "August, 29, 2018",
+      }
+      ]
+    },
+
     {'product': "trader joe's everything but the bagel sesame seasoning blend",
      'company': "Trader Joe's",
      'image': "./images/bagel.jpg",
