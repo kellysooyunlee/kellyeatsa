@@ -42,6 +42,7 @@ var foodProducts = [
         'date': "August, 18, 2018",
       }
       ]
+
     }
 
 ];
@@ -138,10 +139,13 @@ $(document).ready(function() {
         // placeholder: "What are your thoughts about " + foodProducts[i]["product"].css("text-transform", "capitalize") +"?"
       });
 
-      const $reviewVariable = foodProducts[i]["reviews"];
+      // const $reviewVariable = foodProducts[i]["reviews"];
 
       const $reviewList = $("<ul>").appendTo($formDiv);
-      const $firstReview= $("<li>").text($reviewVariable);
+      // const $firstReview= $("<li>").text(foodProducts[i]["reviews"]);
+      const $firstReview= $("<li>").text(foodProducts[i].reviews[0].text);
+      const $firstName= $("<p class='user'>").text(foodProducts[i].reviews[0].name + " said : ");
+      $firstReview.prepend($firstName);
       $formDiv.prepend($inputReview);
       $reviewList.prepend($firstReview);
 

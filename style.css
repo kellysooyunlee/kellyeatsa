@@ -212,6 +212,11 @@ h2 {
   position: relative;
 }
 
+.user {
+  font-family: 'Arial';
+  font-weight: bold;
+  margin-bottom: 10px;
+}
 /*img.close {
   max-width: 50px;
 }*/
