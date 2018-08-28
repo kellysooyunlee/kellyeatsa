@@ -11,7 +11,7 @@ var foodProducts = [
      'reviews':
       [ {'name': "Ezra Curry",
         'text': "These are so delicious and very addicting.!",
-        'date': "August, 20, 2018",
+        'date': "August 20, 2018",
       }
       ]
     },
@@ -25,7 +25,7 @@ var foodProducts = [
      'reviews':
       [ {'name': "Jae Park",
         'text': "So good. Pocky is so good.",
-        'date': "August, 29, 2018",
+        'date': "August 29, 2018",
       }
       ]
     },
@@ -39,7 +39,7 @@ var foodProducts = [
       'reviews':
       [ {'name': "Octopus Kim",
         'text': "As you might suspect from the name, this seasoning tastes exactly like eating an everything bagel. I have sprinkled this on my morning sunny side eggs to give them more flavor, but have no doubt there will be another good combination for this somewhere else.",
-        'date': "August, 18, 2018",
+        'date': "August 18, 2018",
       }
       ]
 
