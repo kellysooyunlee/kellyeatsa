@@ -144,7 +144,7 @@ $(document).ready(function() {
       const $reviewList = $("<ul>").appendTo($formDiv);
       // const $firstReview= $("<li>").text(foodProducts[i]["reviews"]);
       const $firstReview= $("<li>").text(foodProducts[i].reviews[0].text);
-      const $firstName= $("<p class='user'>").text(foodProducts[i].reviews[0].name + " said : ");
+      const $firstName= $("<p class='user'>").text(foodProducts[i].reviews[0].name + " || " + foodProducts[i].reviews[0].date);
       $firstReview.prepend($firstName);
       $formDiv.prepend($inputReview);
       $reviewList.prepend($firstReview);
